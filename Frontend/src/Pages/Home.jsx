@@ -1,20 +1,13 @@
 import React from 'react';
+import './Home.css';
 
 const Home = () => {
     return(
-        <main style={styles.main}>
+        <div className='home-container'>
             <h2>Welcome to FoodieBOT..!</h2>
             <p>Discover resturants near you using our intelligent Chatbot</p>
-        </main>
+        </div>
     );
-};
-
-const styles = {
-    main: {
-      minHeight: '80vh',
-      textAlign: 'center',
-      padding: '0.75rem',
-    },
 };
 
 export default Home;
