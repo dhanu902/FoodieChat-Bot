@@ -1,31 +1,24 @@
 import React from 'react';
-import Header from './Components/Header';
-import Footer from './Components/Footer';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+
+import Layout from './Components/Layout';
 import Home from './Pages/Home';
+import ChatPage from './Pages/ChatPage';
+
+import './App.css'
 
 const App = () => {
   return (
-    <div style={styles.container}>
-      <Header />
-      <main style={styles.main}>
-        <Home />
-      </main>
-      <Footer />
-    </div>
+    <Router>
+          <Routes>
+            <Route element={<Layout />}>
+              <Route path="/" element={<Home />} />
+              <Route path="/chat" element={<ChatPage />} />
+              {/* add more routes */}  
+            </Route>
+          </Routes>
+    </Router>
   );
-};
-
-const styles = {
-  container: {
-    display: 'flex',
-    flexDirection: 'column',
-    minHeight: '100vh',
-    backgroundColor: '#1e1e1e'
-  },
-
-  main: {
-    flex: 1,
-  },
 };
 
 export default App;
