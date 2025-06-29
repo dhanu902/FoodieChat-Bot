@@ -33,5 +33,5 @@ Foodie Chatbot is a smart, location-based assistant designed to help users disco
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/foodie-chatbot.git
+git clone https://github.com/dhanu902/foodie-chatbot.git
 cd foodie-chatbot
