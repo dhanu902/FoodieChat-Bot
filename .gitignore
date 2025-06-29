@@ -23,7 +23,9 @@ dist-ssr
 *.sln
 *.sw?
 
-# .gitignore
+# Ignore .env file
 .env
+
+# Ignore dataset files, but keep README.md files
 DataSets/**/*
 !DataSets/**/README.md
